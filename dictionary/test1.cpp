@@ -32,10 +32,10 @@ int main() {
 
 	cout << "Height of d: " << d.calculateHeight() << endl;
 
-    Dictionary empty = Dictionary();
-	cout << "Height of an empty tree: " << empty.calculateHeight() << endl;
+    Dictionary emptyTree = Dictionary();
+	cout << "Height of an empty tree: " << emptyTree.calculateHeight() << endl;
 
-	Dictionary oneNode = Dictionary();
-	oneNode.insert(1, "London");
-	cout << "Height of a tree with one node: " << oneNode.calculateHeight() << endl;
+	Dictionary treeWithOneNode = Dictionary();
+	treeWithOneNode.insert(1, "London");
+	cout << "Height of a tree with one node: " << treeWithOneNode.calculateHeight() << endl;
 }
