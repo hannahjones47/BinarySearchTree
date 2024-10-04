@@ -24,6 +24,7 @@ class Dictionary {
 		void doDisplayTree(TNode*, string);
 		void doRotateRightOn(TNode**, int);
 		void doRotateLeftOn(TNode**, int);
+		int doCalculateHeight(TNode*);
 	public:
 		Dictionary();
 		~Dictionary();
@@ -41,4 +42,5 @@ class Dictionary {
 		void displayTree();
 		void rotateRightOn(int key);
 		void rotateLeftOn(int key);
+		int calculateHeight();
 };

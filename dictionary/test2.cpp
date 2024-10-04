@@ -38,6 +38,8 @@ int main() {
 	d.displayEntries();
 	d.displayTree();
 
+	cout << "Height of d: " << d.calculateHeight() << endl;
+
 	Dictionary d2(d);
 	d2.rotateLeftOn(2);
 	cout << "After the rotation\n";
@@ -47,4 +49,6 @@ int main() {
 	d2.rotateRightOn(1);
 	cout << "After the rotation\n";
 	d2.displayTree();
+
+	cout << "Height of d2: " << d2.calculateHeight() << endl;
 }

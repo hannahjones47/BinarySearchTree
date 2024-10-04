@@ -288,3 +288,16 @@ void Dictionary::rotateLeft(TNode **root) {
 	pB->left = p;
 	*root = pB;
 }
+
+int Dictionary::doCalculateHeight(TNode* node) {
+	if (node == nullptr) {
+		return -1; 
+	}
+    int leftHeight = doCalculateHeight(node->left);
+    int rightHeight = doCalculateHeight(node->right);
+    return std::max(leftHeight, rightHeight) + 1;
+}
+
+int Dictionary::calculateHeight() {
+    return doCalculateHeight(root); 
+}
