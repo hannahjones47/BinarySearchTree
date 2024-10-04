@@ -29,7 +29,4 @@ int main() {
 
 	d.displayEntries();
 	d.displayTree();
-
-	
-	cout << "Height: " << d.calculateHeight() << endl;
 }
